@@ -1,4 +1,4 @@
-# calc
+# filters
 This repo has code to show data from depression in people in prison in Brazil as a webpage with buttons and filters.
 
 ## About

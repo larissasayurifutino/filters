@@ -67,22 +67,45 @@
     </tr>
     </table>
 
-    <p>Segundo o SUS, número de consultas de pessoas encarceiradas relacionadas à depressão saltou de 51 para 1417 
-        entre 2015 e 2020.</p>
+    <p>
+        Segundo o SUS, número de consultas de pessoas encarceiradas relacionadas à depressão saltou de 51 para 1417 
+        entre 2015 e 2020.
+    </p>
+
+    <h2>O que sabemos</h2>
+
+    <!-- 'data-alvo' manda uma propriedade do html para o javascript -->
+    <ul class="botoes">
+        <li>
+            <button data-alvo=".passo-0" class="botao-ativo">Contagem</button> 
+        </li>
+
+        <li>
+            <button data-alvo=".passo-1">Taxa</button>
+        </li>
+    </ul>    
+
+    <section class="passos">
+        <div class="passo-0 passo-ativo">
+            <!-- Gráfico de barras - pop. carcer. número absoluto -->
+            <div class="flourish-embed flourish-chart" data-src="visualisation/10367368">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div> 
+        </div>
+    
+        <div class="passo-1">
+            <!-- Gráfico de barras - pop. carcer. taxa 100k hab -->
+            <div class="flourish-embed flourish-chart" data-src="visualisation/10367980">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>            
+        </div>
+    </section>
+
+       
 
 
 
-    <!-- Gráfico de barras - pop. carcer. número absoluto -->
-    <div class="flourish-embed flourish-chart" data-src="visualisation/10367368">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-    </div>        
 
-
-
-    <!-- Gráfico de barras - pop. carcer. taxa 100k hab -->
-    <div class="flourish-embed flourish-chart" data-src="visualisation/10367980">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-    </div>
 
 
 
@@ -97,6 +120,8 @@
     <div class="flourish-embed flourish-chart" data-src="visualisation/10368360">
         <script src="https://public.flourish.studio/resources/embed.js"></script>
     </div>
+
+    <script src="app.js"></script>    
 
 </body>
 </html>

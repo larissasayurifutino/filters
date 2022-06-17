@@ -2,3 +2,91 @@ table, th, td {
     border:1px black;
     width:10%
   }
+
+/* Botões para o usuario */   
+ul.botoes{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 5;
+  width: 100%;
+  max-width: 60px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 auto;
+}
+
+ul.botoes > li{
+  width: 100%;
+  display: block;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: end;
+}
+
+ul.botoes button{
+  background: #555; /* Cinza */
+  border: 0;          /* Sem borda */
+  padding: 20px;      /* Com espaçamento interno */
+  display: flex;      /*  */
+  align-items: center;/* P/ alinhar verticalmente */
+  width: 75%;         /* P/ deixar o botão inativo (padrão) menor */
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  cursor: pointer;    /* P/ colocar a mãozinha no cursor*/
+  color: #fff;
+
+  transition: width 0.3s ease-out, background-color 0.3s ease-out; /* a transição da largura e da cor em 03.segundos suavemente*/
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+}
+
+ul.botoes button.botao-ativo{
+  width: 100%;        /* botão maior */  
+  background: #000; /* preto */
+}
+
+ul.botoes button:hover{
+  width: 100%;
+}
+
+
+/* P/ trocar os gráficos */  
+.passos{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    flex-grow: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;     /*sem grid as imagens fiquem empilhadas*/
+    z-index:2;
+  }
+  
+
+.passos > div {      /*Todas as div fihas diretas da classe passos*/
+    grid-column: 1 / 2;/* Começa coluna 1 termina antes da coluna 2 */
+    grid-row: 1 / 2;   /* Todos os filhos estarão na mesma célula */
+    height: 100%;      /* 100% do pai: passos */
+    width: 100%;       /* 100% do pai: passos */
+    margin: auto;
+    display: flex;
+    opacity: 0;        /* Todas escondidas por padrão */
+    transition: opacity 0.2s linear;
+  }
+  
+
+.passos > div.passo-ativo{ /* A div com classe passo ativo terá opacidade 1 */
+    opacity: 1;
+  }
+  
+
+.passos > div > img{
+    width: 100%;
+    max-width: 860px;      /* O máximo que a imagem vai crescer é 860px */
+    align-self: center;
+    margin: auto;          /* Margens iguais dos 2 lados */
+  }  

@@ -18,23 +18,23 @@
     <table style="width:15%">
     
     <tr>
-        <td>EUA</td>
+        <td>🇺🇸 EUA</td>
         <td> 2 068 800</td>
     </tr>
     <tr>
-        <td>China</td>
+        <td>🇨🇳 China</td>
         <td>1 690 000</td>
     </tr>
     <tr>
-        <td>Brasil</td>
+        <td>🇧🇷 Brasil</td>
         <td>811 707</td>
     </tr>
     <tr>
-        <td>Índia</td>
+        <td>🇮🇳 Índia</td>
         <td> 488 511</td>
     </tr>
     <tr>
-        <td>Rússia</td>
+        <td>🇷🇺 Rússia</td>
         <td>468 237</td>
     </tr>
     </table>
@@ -43,26 +43,26 @@
 
     <h2>População com Depressão</h2>
 
-    <table style="width:10%">
+    <table>
     
     <tr>
-        <td>Ucrânia</td>
+        <td>🇺🇦 Ucrânia</td>
         <td> 6.3%</td>
     </tr>
     <tr>
-        <td>EUA</td>
+        <td>🇺🇸 EUA</td>
         <td>5.9%</td>
     </tr>
     <tr>
-        <td>Estônia</td>
+        <td>🇪🇪 Estônia</td>
         <td>5.9%</td>
     </tr>
     <tr>
-        <td>Australia</td>
+        <td>🇦🇺 Australia</td>
         <td> 5.9%</td>
     </tr>
     <tr>
-        <td>Brasil</td>
+        <td>🇧🇷 Brasil</td>
         <td>5.8%</td>
     </tr>
     </table>
@@ -76,24 +76,23 @@
 
     <!-- 'data-alvo' manda uma propriedade do html para o javascript -->
     <ul class="botoes">
-        <li>
-            <button data-alvo=".passo-0" class="botao-ativo">Contagem</button> 
-        </li>
-
-        <li>
-            <button data-alvo=".passo-1">Taxa</button>
-        </li>
+        
+        <button data-alvo=".passo-Contagem" class="botao1-ativo">Contagem</button> 
+       
+        <button data-alvo=".passo-Taxa">Taxa</button>
+       
     </ul>    
 
+
     <section class="passos">
-        <div class="passo-0 passo-ativo">
+        <div class="passo-Contagem passo-ativo">
             <!-- Gráfico de barras - pop. carcer. número absoluto -->
             <div class="flourish-embed flourish-chart" data-src="visualisation/10367368">
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
             </div> 
         </div>
     
-        <div class="passo-1">
+        <div class="passo-Taxa">
             <!-- Gráfico de barras - pop. carcer. taxa 100k hab -->
             <div class="flourish-embed flourish-chart" data-src="visualisation/10367980">
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -104,22 +103,30 @@
        
 
 
+    <ul class="botoes">
+        
+        <button data-alvo=".passo-Psico" class="botao-ativo">Psicólogos</button> 
+       
+        <button data-alvo=".passo-Psiquiatra">Psiquiatras</button>
+       
+    </ul>   
 
-
-
-
-
-    <!-- Gráfico de linha - numero de psicologos -->
-    <div class="flourish-embed flourish-chart" data-src="visualisation/10368290">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-    </div>
-
-
+    <section class="passos">
+        <div class="passo-Psico passo-ativo">
+            <!-- Gráfico de linha - numero de psicologos -->
+            <div class="flourish-embed flourish-chart" data-src="visualisation/10368290">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+        </div>
     
-    <!-- Gráfico de linha - numero de psiquiatras -->
-    <div class="flourish-embed flourish-chart" data-src="visualisation/10368360">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-    </div>
+        <div class="passo-Psiquiatra">
+            <!-- Gráfico de linha - numero de psiquiatras -->
+            <div class="flourish-embed flourish-chart" data-src="visualisation/10368360">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>           
+        </div>
+    </section>    
+
 
     <script src="app.js"></script>    
 

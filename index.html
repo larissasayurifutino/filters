@@ -76,15 +76,16 @@
 
     <!-- 'data-alvo' manda uma propriedade do html para o javascript -->
     <ul class="botoes">
-        
-        <button data-alvo=".passo-Contagem" class="botao1-ativo">Contagem</button> 
-       
-        <button data-alvo=".passo-Taxa">Taxa</button>
-       
+        <li>
+            <button data-alvo=".passo-Contagem" data-secao="pop-carc" class="botao-ativo">Contagem</button> 
+        </li>
+        <li>
+            <button data-alvo=".passo-Taxa" data-secao="pop-carc">Taxa</button>
+        </li>
     </ul>    
 
 
-    <section class="passos">
+    <section class="passos pop-carc">
         <div class="passo-Contagem passo-ativo">
             <!-- Gráfico de barras - pop. carcer. número absoluto -->
             <div class="flourish-embed flourish-chart" data-src="visualisation/10367368">
@@ -105,13 +106,13 @@
 
     <ul class="botoes">
         
-        <button data-alvo=".passo-Psico" class="botao-ativo">Psicólogos</button> 
+        <button data-alvo=".passo-Psico" data-secao="profiss" class="botao-ativo">Psicólogos</button> 
        
-        <button data-alvo=".passo-Psiquiatra">Psiquiatras</button>
+        <button data-alvo=".passo-Psiquiatra" data-secao="profiss">Psiquiatras</button>
        
     </ul>   
 
-    <section class="passos">
+    <section class="passos profiss">
         <div class="passo-Psico passo-ativo">
             <!-- Gráfico de linha - numero de psicologos -->
             <div class="flourish-embed flourish-chart" data-src="visualisation/10368290">

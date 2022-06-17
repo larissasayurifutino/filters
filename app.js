@@ -14,13 +14,18 @@ function aoClicar(event){
     let dataAlvo = botaoAtual.dataset.alvo; 
     //console.log(botaoAtual.dataset)
     //console.log(dataAlvo)
+
+    let dataSecao = botaoAtual.dataset.secao; 
     
     let elementoAlvo = document.querySelector(dataAlvo); // Selecionar o elemento
-    console.log(elementoAlvo)
+    //console.log(elementoAlvo)
+
+    // O passo anterior é onde estava o passo ativo. Mas como filho da secao.
+    let passoAnterior = document.querySelector('.' + dataSecao + ' > .passo-ativo');
+    // O botao que estava ativado tinha a classe 'botao-ativo' e era filho de uma secao
+    let botaoAnterior = document.querySelector('.botao-ativo[data-secao="'+dataSecao+'"]');
 
 
-    let passoAnterior = document.querySelector('.passo-ativo');
-    let botaoAnterior = document.querySelector('.botao-ativo');
 
     if(botaoAtual !== botaoAnterior){ // PARA GARANTIR QUE SE O BOTÃO JÁ ESTÁ ATIVO NADA ACONTECERÁ
         // remove a classe 'passo-ativo' do elemento que estava exibido, para escondê-lo // ESCONDER

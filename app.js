@@ -22,7 +22,7 @@ function chamarFlourish(){
 
     for(let div of divsUF){
         
-        if( div.dataset.UF == chosenUF ){
+        if( div.dataset.uf == chosenUF ){
             div.style.display = 'initial'
         }else{
             div.style.display = 'none'

@@ -1,7 +1,204 @@
+
 let botoes = document.querySelectorAll(".botoes button"); // Todos elementos tipo button filhos de elemento classe botoes
 // botoes é um nodelist
 let passos = document.querySelectorAll(".passos > div");
 // passos é um nodelist
+
+let seletor_uf = document.querySelector( '.uf' )
+// Seleciona o elemento <select>
+
+
+// Quando a opção do seletor mudar, dispara uma funcão
+seletor_uf.addEventListener( 'change', chamarFlourish )
+
+function chamarFlourish(){
+
+    // Variavel estado
+    let uf = seletor_uf.value
+
+    if( uf == 'ac' ){ // #68855c
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402368">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+    }
+
+    if( uf == 'al' ){ // #d9af6b
+        console.log('Dados indisponíveis.')
+    }
+    
+    if( uf == 'am' ){
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402444">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+    if( uf == 'ap' ){
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402583">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+    if( uf == 'ba' ){ // #d9af6b
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402903">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+    if( uf == 'ce' ){
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402747">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+    if( uf == 'df' ){ // #467378
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10401903">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+    if( uf == 'es' ){ // #7c7c7c
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10403093">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }     
+
+    if( uf == 'go' ){ // #467378
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402250">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+    if( uf == 'ma' ){ // #d9af6b
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402625">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }    
+
+    if( uf == 'mg' ){ // #7c7c7c
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10403065">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    } 
+
+    if( uf == 'ms' ){ // #467378
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402335">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+    }
+
+    if( uf == 'mt' ){ // #467378
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402293">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+    if( uf == 'pa' ){ // #68855c
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402504">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    } 
+
+    if( uf == 'pb' ){ // #d9af6b
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402816">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }  
+
+    if( uf == 'pe' ){ // #d9af6b
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402865">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }  
+
+    if( uf == 'pi' ){ // #d9af6b
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402726">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }     
+    
+    if( uf == 'pr' ){ // #a06177
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10403015">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }      
+    
+    
+    if( uf == 'rj' ){ // #7c7c7c
+        console.log('Dados indisponíveis.')
+    }     
+
+
+    if( uf == 'rn' ){ // #d9af6b
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402772">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+
+    if( uf == 'ro' ){ // #68855c
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402402">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+    if( uf == 'rr' ){ // #68855c
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402478">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+
+
+    if( uf == 'rs' ){ // #a06177
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402959">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }    
+
+
+    if( uf == 'sc' ){ // #a06177
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402986">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }     
+
+    if( uf == 'se' ){ // #d9af6b
+        console.log('Dados indisponíveis.')
+    }
+
+    if( uf == 'sp' ){ // #7c7c7c
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10403039">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }  
+
+    if( uf == 'to' ){ // #68855c
+        <div class="flourish-embed flourish-chart" data-src="visualisation/10402538">
+            <script src="https://public.flourish.studio/resources/embed.js">
+            </script>
+        </div>
+    }
+}
 
 // // código executado ao clicar
 function aoClicar(event){ 

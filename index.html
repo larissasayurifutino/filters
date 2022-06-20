@@ -11,8 +11,31 @@
     
     <h1>Em um país de tantos deprimidos os detentos não fogem à regra</h1>
 
-    <p>O Brasil é o 3º país com maior população carcerária do mundo (segundo dados da <a href="https://www.prisonstudies.org/highest-to-lowest/prison-population-total?field_region_taxonomy_tid=All">World Prison Brief</a>) </p>
+    <div>
+        <ul class="begin">
+            <li>
+                <p>
+                    O Brasil é o 3º país com maior população carcerária do mundo 
+                    (segundo dados da <a href="https://www.prisonstudies.org/highest-to-lowest/prison-population-total?field_region_taxonomy_tid=All">World Prison Brief</a>) 
+                </p>
+            </li>
+            <li>
+                <p>
+                    e o país com o 3º maior percentual de pessoas com Depressão 
+                    (segundo dados da <a href="https://www.who.int/publications/i/item/depression-global-health-estimates">OMS</a>)
+                </p>                
+            </li>
 
+            <li>
+                <p>
+                    Segundo o SUS, número de consultas de pessoas encarceiradas relacionadas à depressão saltou de 51 para 1417 
+                    entre 2015 e 2020.
+                </p>
+            </li>
+        </ul>  
+    </div>    
+
+ 
     <h2>População carcerária</h2>
 
     <table style="width:15%">
@@ -38,8 +61,6 @@
         <td>468 237</td>
     </tr>
     </table>
-
-    <p>e o país com o 3º maior percentual de pessoas com Depressão (segundo dados da <a href="https://www.who.int/publications/i/item/depression-global-health-estimates">OMS</a>)</p>
 
     <h2>População com Depressão</h2>
 
@@ -67,12 +88,12 @@
     </tr>
     </table>
 
-    <p>
-        Segundo o SUS, número de consultas de pessoas encarceiradas relacionadas à depressão saltou de 51 para 1417 
-        entre 2015 e 2020.
-    </p>
+
 
     <h2>O que sabemos</h2>
+
+
+    <h3>População carcerária</h3>
 
     <!-- 'data-alvo' manda uma propriedade do html para o javascript -->
     <ul class="botoes">
@@ -102,14 +123,16 @@
     </section>
 
        
-
+    <h3>Profissionais de Saúde Mental</h3>
 
     <ul class="botoes">
+        <li>
+            <button data-alvo=".passo-Psico" data-secao="profiss" class="botao-ativo">Psicólogos</button> 
+        </li>
         
-        <button data-alvo=".passo-Psico" data-secao="profiss" class="botao-ativo">Psicólogos</button> 
-       
-        <button data-alvo=".passo-Psiquiatra" data-secao="profiss">Psiquiatras</button>
-       
+       <li>
+            <button data-alvo=".passo-Psiquiatra" data-secao="profiss">Psiquiatras</button>
+        </li> 
     </ul>   
 
     <section class="passos profiss">
@@ -126,7 +149,41 @@
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
             </div>           
         </div>
-    </section>    
+    </section>   
+    
+
+    <h3>Consultas no SUS</h3>
+
+    <select class="uf">
+        <option value="ac">Acre</option>
+        <option value="al">Alagoas</option>
+        <option value="am">Amazonas</option>
+        <option value="ap">Amapá</option>
+        <option value="ba">Bahia</option>
+        <option value="ce">Ceará</option>
+        <option value="df">Distrito Federal</option>
+        <option value="es">Espírito Santo</option>
+        <option value="go">Goiás</option>
+        <option value="ma">Maranhão</option>
+        <option value="mg" selected>Minas Gerais</option>
+        <option value="ms">Mato Grosso do Sul</option>
+        <option value="mt">Mato Grosso</option>
+        <option value="pa">Pará</option>
+        <option value="pb">Paraíba</option>
+        <option value="pe">Pernambuco</option>
+        <option value="pi">Piauí</option>
+        <option value="pr">Paraná</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="rn">Rio Grande do Norte</option>
+        <option value="ro">Rondônia</option>
+        <option value="rr">Roraima</option>
+        <option value="rs">Rio Grande do Sul</option>
+        <option value="sc">Santa Catarina</option>
+        <option value="se">Sergipe</option>
+        <option value="sp">São Paulo</option>
+        <option value="tp">Tocantins</option>
+      </select>
+
 
 
     <script src="app.js"></script>    
